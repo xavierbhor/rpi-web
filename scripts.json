@@ -1,0 +1,8 @@
+{
+    "desktop": "/home/pi/files/scripts/desktop.sh",
+    "close_desktop": "/home/pi/files/scripts/desktop_close.sh",
+    "kodi": "/home/pi/files/scripts/kodi.sh",
+    "close_kodi": "/home/pi/files/scripts/kodi_close.sh",
+    "emulationstation": "/home/pi/files/scripts/emulationstation.sh",
+    "close_emulationstation": "/home/pi/files/scripts/emulationstation_close.sh"
+}

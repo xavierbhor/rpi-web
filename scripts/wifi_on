@@ -1,0 +1,11 @@
+#!/bin/bash
+
+mv /etc/wpa_supplicant/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf.bor
+cp $2 /etc/wpa_supplicant/wpa_supplicant.conf
+wpa_cli -i $1 reconfigure
+mv /etc/wpa_supplicant/wpa_supplicant.conf.bor /etc/wpa_supplicant/wpa_supplicant.conf
+
+sudo iptables -t nat -F
+iptables -t nat -A POSTROUTING -o $1 -j MASQUERADE
+
+wpa_cli status $1

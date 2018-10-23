@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>BOR-RPI</title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+	<style type="text/css">
+		body, html {
+			font-family: sans-serif;
+		}
+	</style>
+
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/popper.min.js"></script>
+	<script src="lib/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="lib/bootstrap.min.css">
+
+<script src="utils.js"></script>
+
+<!----------------------------------- -->
+
+<script src="index.js"></script>
+
+<style>
+
+.btNum{
+	background-color: navy;
+    position: relative;
+    width: 25%;
+    border-radius: 100%;
+    display: inline-block;
+    margin:3%;
+}
+
+.btNum:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+body {
+    width: 60vh;
+    padding:15px;
+    margin: auto;
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<h1 style="text-align: center;">BOR-RPI</h1>
+
+    <hr>
+
+	<div class="botons">
+        <div class="btNum" data-num="1" data-val="0"></div>
+        <div class="btNum" data-num="2" data-val="0"></div>
+        <div class="btNum" data-num="3" data-val="0"></div>
+        <div class="btNum" data-num="4" data-val="0"></div>
+        <div class="btNum" data-num="5" data-val="0"></div>
+        <div class="btNum" data-num="6" data-val="0"></div>
+        <div class="btNum" data-num="7" data-val="0"></div>
+        <div class="btNum" data-num="8" data-val="0"></div>
+        <div class="btNum" data-num="9" data-val="0"></div>
+    </div>
+
+    <hr>
+
+    <button id="btLogin" class="btn btn-info btn-lg btn-block">Confirm</button>
+
+</body>
+
+
+</html>

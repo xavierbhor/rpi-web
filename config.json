@@ -1,0 +1,5 @@
+{
+    "password": "100210110",
+    "wifiConfigPath":"/home/pi/rpi-web/data/",
+    "scriptsPath":"/home/pi/rpi-web/scripts/"
+}
